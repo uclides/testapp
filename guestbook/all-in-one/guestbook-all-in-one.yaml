@@ -135,11 +135,11 @@ spec:
         image: danielhelfand/gb-frontend
         resources:
           requests:
-            cpu: 100m
-            memory: 100Mi
+            cpu: 200m
+            memory: 200Mi
         env:
         - name: GET_HOSTS_FROM
-          value: dnsexample
+          value: dns
           # If your cluster config does not include a dns service, then to
           # instead access environment variables to find service host
           # info, comment out the 'value: dns' line above, and uncomment the
